@@ -11,25 +11,7 @@ namespace Obligatorisk_DBOpgave
     {
         string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=HotelDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-        //public void Start()
-        //{
-        //    string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=HotelDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        //    string queryString = "select * from DemoFacility";
-        //    using (SqlConnection connection = new SqlConnection(connectionString))
-        //    {
-        //        SqlCommand command = new SqlCommand(queryString, connection);
-        //        command.Connection.Open();
-        //        SqlDataReader reader = command.ExecuteReader();
-
-        //        while (reader.Read())
-        //        {
-        //            int id = reader.GetInt32(0);
-        //            string name = reader.GetString(1);
-        //            int hotel = reader.GetInt32(2);
-        //            Console.WriteLine($"{id} - {name} - {hotel}");
-        //        }
-        //    }
-        //}
+        
         private int GetMaxFacilityNo(SqlConnection connection)
         {
             Console.WriteLine("Calling -> GetMaxFacilityNo");
